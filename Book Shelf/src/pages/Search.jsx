@@ -14,9 +14,10 @@ export const Search = () => {
       <input
         type="text"
         style={{ width: "600px", height: "50px" }}
-        placeholder="   Search the name of your project here"
+        placeholder="   Search the name of your book here"
         onChange={(e) => setFilterKeys(e.target.value)}
       />
+      {filteredBooks.length===0 && <h2>No Books Matched. Clear the input field to show all the books</h2>}
       <ul style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
         {filteredBooks.map((book) => {
           return <Book book={book} key={book.id} />;
