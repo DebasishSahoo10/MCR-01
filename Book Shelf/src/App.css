@@ -44,7 +44,51 @@
 li {
   list-style: none;
 }
+ul {
+  padding-inline-start: 0;
+}
 
 h1 {
   color: #404afdaa;
+}
+
+p {
+  color: black;
+  max-width: 98%;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+h3,
+h2 {
+  color: black;
+}
+h3::first-letter {
+  text-transform: capitalize;
+}
+
+.author {
+  color: darkblue;
+  font-weight: bold;
+}
+
+select {
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: black;
+  font-family: system-ui;
+  font-weight: 500;
+}
+
+input {
+  background-color: transparent;
+  border: 2px black dashed;
+  border-radius: 10px;
+  font-family: system-ui;
+  font-size: large;
+  caret-color: darkblue;
+}
+.active {
+  color: red;
+  text-decoration: underline;
 }
