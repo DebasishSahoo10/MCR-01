@@ -5,7 +5,6 @@ import { DataContext } from "../contexts/DataContext";
 export const Book = ({ book }) => {
   const { dispatch } = useContext(DataContext);
   const handleStatusChange = (newStatus) => {
-    // console.log(newStatus, book)
     dispatch({
       type: "STATUS_CHANGE",
       payload: { book: book, newStatus: newStatus },
